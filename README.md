@@ -1,7 +1,7 @@
 # 🔧 Intro to Physical Computing with Raspberry Pi 3
 ### *Wire It. Code It. Watch It Work!*
 
-![Physical Computing Banner](images/physical_computing_banner.png)
+//![Physical Computing Banner](images/physical_computing_banner.png)
 
 Welcome to the Raspberry Pi 3 Physical Computing Workshop! This 3-session program is designed for middle school students to explore hands-on electronics, coding, and creative projects using a Raspberry Pi 3.
 
@@ -12,7 +12,8 @@ Welcome to the Raspberry Pi 3 Physical Computing Workshop! This 3-session progra
 ### 🔹 [Session 1: Getting Started with Raspberry Pi & Physical Computing](./Session1_RPi3_PhysicalComputing.md)
 - Introduction to Raspberry Pi 3 as a computer
 - Write your first Python program
-- Blink an LED using GPIO
+- Learn about GPIO and breadboards
+- Blink an LED using GPIOZero
 
 ### 🔹 [Session 2: Inputs & Outputs with Raspberry Pi 3](./Session2_RPi3_InputsOutputs.md)
 - Learn digital signals and GPIO logic
