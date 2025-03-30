@@ -2,39 +2,64 @@
 
 **Theme:** _“Code meets the real world!”_
 
-## Objectives:
-- Understand what the Raspberry Pi 3 is and how it works as a full computer
-- Write your first Python program
-- Learn what GPIO pins do
-- Blink an LED using Python and GPIO
+## 🧠 Objectives
+- Understand Raspberry Pi 3 as a full computer
+- Write and run your first Python program
+- Learn what GPIO pins are and what they do
+- Understand how breadboards help connect circuits
+- Use GPIOZero to blink an LED
 
-## Activities:
-### 1. Welcome & Icebreaker (10 min)
-Prompt: “If you could automate one thing in your life, what would it be?”
+---
 
-### 2. What is a Raspberry Pi? (10 min)
-- Explain Pi 3 as a full mini computer
-- Overview of USB ports, HDMI, GPIO, etc.
+## 🧩 Session Flow
 
-### 3. Python Hello World (15 min)
+### 1. Welcome & Icebreaker (5–10 min)
+Prompt: “If your robot could do anything, what would it do?”
+
+### 2. What Is the Raspberry Pi 3? (10 min)
+- Overview of ports (USB, HDMI, GPIO, SD card)
+- Differences from a regular laptop
+- Introduce concept of general-purpose computing and sensors
+
+### 3. Hello Python! Your First Program (10 min)
 - Open Thonny (or IDLE)
-- Run: `print("Hello, World!")`
-
-### 4. Blink an LED (40 min)
-- Wire an LED to GPIO pin using breadboard
-- Control it using Python
-
-## Sample Code:
+- Type and run:
 ```python
-import RPi.GPIO as GPIO
-import time
+print("Hello, world!")
+```
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(18, GPIO.OUT)
+### 4. Intro to GPIO & Breadboarding (10–15 min)
+- What are GPIO pins?
+- Why and how to use a breadboard
+- Show how a Pi pin can power or control an LED
+
+### 5. Blink an LED Using GPIOZero (30 min)
+- Wire LED + resistor to GPIO pin using a breadboard
+- Use the gpiozero library for easy code
+
+**Example Code:**
+```python
+from gpiozero import LED
+from time import sleep
+
+led = LED(17)
 
 while True:
-    GPIO.output(18, GPIO.HIGH)
-    time.sleep(0.5)
-    GPIO.output(18, GPIO.LOW)
-    time.sleep(0.5)
+    led.on()
+    sleep(1)
+    led.off()
+    sleep(1)
 ```
+
+### 6. Wrap-Up & Experimentation (10 min)
+- Change blink speed
+- Try other GPIO pins
+- Add second LED (bonus)
+
+---
+
+### ✅ Materials Needed
+- Raspberry Pi 3 with power supply
+- Monitor, keyboard, mouse
+- Breadboard + jumper wires
+- LED + resistor (220Ω–330Ω)
