@@ -1,7 +1,6 @@
 # 🔧 Intro to Physical Computing with Raspberry Pi 3
 ### *Wire It. Code It. Watch It Work!*
 
-//![Physical Computing Banner](images/physical_computing_banner.png)
 
 Welcome to the Raspberry Pi 3 Physical Computing Workshop! This 3-session program is designed for middle school students to explore hands-on electronics, coding, and creative projects using a Raspberry Pi 3.
 
