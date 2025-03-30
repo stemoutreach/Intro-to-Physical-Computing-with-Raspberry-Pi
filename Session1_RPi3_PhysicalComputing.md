@@ -21,9 +21,7 @@ Prompt: “If your robot could do anything, what would it do?”
 - Differences from a regular laptop
 - Introduce concept of general-purpose computing and sensors
 
-
-
-<img src="https://github.com/stemoutreach/Intro-to-Physical-Computing-with-Raspberry-Pi-3/blob/main/images/Introduction-of-Raspberry-Pi-3-Model-B.jpg" width="600" > 
+    <img src="https://github.com/stemoutreach/Intro-to-Physical-Computing-with-Raspberry-Pi-3/blob/main/images/Introduction-of-Raspberry-Pi-3-Model-B.jpg" width="400" > 
 
 ### 3. Hello Python! Your First Program (10 min)
 - Open Thonny (or IDLE)
