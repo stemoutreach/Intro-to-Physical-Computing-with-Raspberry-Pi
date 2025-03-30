@@ -35,7 +35,10 @@ print("Hello, world!")
 - Why and how to use a breadboard
 - Show how a Pi pin can power or control an LED
 
+     <img src="https://github.com/stemoutreach/Intro-to-Physical-Computing-with-Raspberry-Pi-3/blob/main/images/SimpleLEDBreadboardExample.jpg" width="400" > 
+
     [GPIO Pin Numbering](https://gpiozero.readthedocs.io/en/stable/recipes.html#pin-numbering)
+
 
 ### 5. Blink an LED Using GPIOZero (30 min)
 - Wire LED + resistor to GPIO pin using a breadboard
