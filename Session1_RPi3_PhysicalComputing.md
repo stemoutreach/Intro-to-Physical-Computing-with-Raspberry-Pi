@@ -58,6 +58,9 @@ while True:
     sleep(1)
 ```
 
+<img src="https://github.com/stemoutreach/Intro-to-Physical-Computing-with-Raspberry-Pi-3/blob/main/images/BlinkLED-GPIO17.jpg" width="400" > 
+
+
 ### 6. Wrap-Up & Experimentation (10 min)
 - Change blink speed
 - Try other GPIO pins
