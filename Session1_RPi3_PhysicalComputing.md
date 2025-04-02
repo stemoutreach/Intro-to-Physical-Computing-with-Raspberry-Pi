@@ -73,3 +73,14 @@ while True:
 - Monitor, keyboard, mouse
 - Breadboard + jumper wires
 - LED + resistor (220Ω–330Ω)
+
+
+### References
+- [GPIOZERO - Documentation](https://gpiozero.readthedocs.io/en/stable)
+- Tutorials
+    - [Breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard)
+    - [Diodes](https://learn.sparkfun.com/tutorials/diodes/introduction)
+    - [Resistors](https://learn.sparkfun.com/tutorials/resistors/)
+    - [LEDs](https://learn.sparkfun.com/tutorials/light-emitting-diodes-leds)
+
+
