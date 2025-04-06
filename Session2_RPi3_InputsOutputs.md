@@ -1,38 +1,101 @@
-# 🔌 Session 2: Inputs & Outputs with Raspberry Pi 3
+# 🔌 Session 2: Inputs, Outputs, and Movement with GPIOZero
 
-**Theme:** _“Make your Pi respond to YOU!”_
+**Theme:** _“Talk to your circuit—and make it move!”_
 
-## Objectives:
-- Learn about GPIO input vs output
-- Wire a button and LED to interact with your circuit
-- Understand pull-up/down resistors and digital logic
+## 🧠 Objectives
+- Understand buttons as input devices
+- Combine button input and LED output
+- Learn about PWM (Pulse Width Modulation) for LED brightness
+- Introduce motors (servo and DC)
+- Encourage exploration and experimentation
 
-## Activities:
-### 1. Recap & Warm-Up (10 min)
+---
 
-### 2. Review GPIO & Digital Signals (10 min)
-- Quick diagram: ON vs OFF, HIGH vs LOW
+## 🧩 Session Flow
 
-### 3. Wire a Button and LED (15 min)
+### 1. Quick Recap & Warm-Up (5–10 min)
+- What did you build last time?
+- What did the LED do and how did Python control it?
 
-### 4. Write Python Code to Control LED with Button (30 min)
+---
 
-## Sample Code:
+### 2. Add a Button – GPIO Input (15 min)
+- Wire a button using a pull-down resistor or `gpiozero.Button()`
+- Control an LED based on button press
+
+**Sample Code:**
 ```python
-import RPi.GPIO as GPIO
-import time
+from gpiozero import LED, Button
+from signal import pause
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(18, GPIO.OUT)
-GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+led = LED(17)
+button = Button(18)
 
-try:
-    while True:
-        if GPIO.input(17) == GPIO.HIGH:
-            GPIO.output(18, GPIO.HIGH)
-        else:
-            GPIO.output(18, GPIO.LOW)
-        time.sleep(0.1)
-except KeyboardInterrupt:
-    GPIO.cleanup()
+button.when_pressed = led.on
+button.when_released = led.off
+
+pause()
 ```
+
+---
+
+### 3. Explore PWM – LED Brightness (10–15 min)
+- Introduce PWM as variable power
+- Show how to fade or dim an LED using `PWMLED`
+
+**Sample Code:**
+```python
+from gpiozero import PWMLED
+from time import sleep
+
+led = PWMLED(17)
+
+while True:
+    for brightness in range(0, 101, 5):
+        led.value = brightness / 100
+        sleep(0.05)
+```
+
+---
+
+### 4. Motor Introduction – Servo & DC (20+ min)
+
+#### Option A: Servo Motor
+- Explain rotation in degrees
+- Connect servo (3 wires: GND, power, signal)
+
+**Sample Code:**
+```python
+from gpiozero import Servo
+from time import sleep
+
+servo = Servo(17)
+
+while True:
+    servo.min()
+    sleep(1)
+    servo.max()
+    sleep(1)
+```
+
+#### Option B: DC Motor
+- If motor driver available (like L298N or motor HAT)
+- Show on/off or directional movement if possible
+
+---
+
+### 5. Explore & Build (15 min)
+- Encourage combinations: button + PWM, button-controlled servo, etc.
+- Let students pick what they want to try
+- Help troubleshoot and spark ideas
+
+---
+
+## ✅ Materials Checklist
+- Raspberry Pi 3 with monitor, keyboard, mouse
+- Breadboards, jumper wires
+- LEDs, resistors
+- Buttons
+- Servo motors and/or DC motors
+- External power (if using DC motors)
+- Optional: potentiometers, extra LEDs, buzzers
