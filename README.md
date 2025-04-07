@@ -15,10 +15,11 @@ Welcome to the Raspberry Pi 3 Physical Computing Workshop! This 3-session progra
 - Learn about GPIO and breadboards
 - Blink an LED using GPIOZero
 
-### 🔹 [Session 2: Inputs, Outputs, and Movement with GPIOZero](./Session2_RPi3_InputsOutputs.md)
-- Use a button as input to control an LED
-- Explore PWM to fade an LED
-- Introduce servo and DC motors
+### 🔹 [Session 2: Inputs, Outputs, Movement, and Python Fundamentals](./Session2_RPi3_InputsOutputs.md)
+- Review Python basics: variables, loops, conditionals, and functions
+- Use buttons to control LEDs
+- Fade an LED using PWM
+- Introduce servo and DC motor control
 
 ### 🔹 [Session 3: Mini Project – Invent, Build, Show Off](./Session3_RPi3_MiniProject.md)
 - Build a custom project with buttons, LEDs, buzzers

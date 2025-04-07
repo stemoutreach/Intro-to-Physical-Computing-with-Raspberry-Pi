@@ -1,29 +1,62 @@
-# 🔌 Session 2: Inputs, Outputs, and Movement with GPIOZero
+# 🔌 Session 2: Inputs, Outputs, Movement, and Python Fundamentals
 
-**Theme:** _“Talk to your circuit—and make it move!”_
+**Theme:** _“Talk to your circuit—and understand the code that powers it!”_
 
 ## 🧠 Objectives
-- Understand buttons as input devices
-- Combine button input and LED output
-- Learn about PWM (Pulse Width Modulation) for LED brightness
-- Introduce motors (servo and DC)
-- Encourage exploration and experimentation
+- Review Python fundamentals (variables, conditionals, loops, functions)
+- Use buttons as inputs to control LEDs
+- Explore PWM to fade LEDs
+- Introduce servo and DC motors
+- Build hands-on circuits while learning to code
 
 ---
 
 ## 🧩 Session Flow
 
 ### 1. Quick Recap & Warm-Up (5–10 min)
-- What did you build last time?
-- What did the LED do and how did Python control it?
+- What did we build in Session 1?
+- What did the LED do, and how did Python control it?
 
 ---
 
-### 2. Add a Button – GPIO Input (15 min)
-- Wire a button using a pull-down resistor or `gpiozero.Button()`
-- Control an LED based on button press
+### 2. Python Fundamentals (15 min)
 
-**Sample Code:**
+#### 🔸 Variables & Print
+```python
+name = "Raspberry Pi"
+print("Hello, " + name)
+```
+
+#### 🔸 If Statements
+```python
+light_on = True
+if light_on:
+    print("The light is on!")
+```
+
+#### 🔸 Loops & Functions with LED
+```python
+from gpiozero import LED
+from time import sleep
+
+led = LED(17)
+
+def blink_led(times):
+    for _ in range(times):
+        led.on()
+        sleep(0.5)
+        led.off()
+        sleep(0.5)
+
+blink_led(3)
+```
+
+---
+
+### 3. Add a Button – GPIO Input (15 min)
+- Wire a button and LED
+- Control LED with button using `gpiozero.Button`
+
 ```python
 from gpiozero import LED, Button
 from signal import pause
@@ -39,11 +72,9 @@ pause()
 
 ---
 
-### 3. Explore PWM – LED Brightness (10–15 min)
-- Introduce PWM as variable power
-- Show how to fade or dim an LED using `PWMLED`
+### 4. Explore PWM – LED Brightness (10–15 min)
+- Use `PWMLED` to fade LED in and out
 
-**Sample Code:**
 ```python
 from gpiozero import PWMLED
 from time import sleep
@@ -58,13 +89,9 @@ while True:
 
 ---
 
-### 4. Motor Introduction – Servo & DC (20+ min)
+### 5. Motor Introduction – Servo & DC (20+ min)
 
-#### Option A: Servo Motor
-- Explain rotation in degrees
-- Connect servo (3 wires: GND, power, signal)
-
-**Sample Code:**
+#### Servo Motor
 ```python
 from gpiozero import Servo
 from time import sleep
@@ -78,16 +105,14 @@ while True:
     sleep(1)
 ```
 
-#### Option B: DC Motor
-- If motor driver available (like L298N or motor HAT)
-- Show on/off or directional movement if possible
+#### DC Motor
+- Use only if driver or motor HAT is available
 
 ---
 
-### 5. Explore & Build (15 min)
-- Encourage combinations: button + PWM, button-controlled servo, etc.
-- Let students pick what they want to try
-- Help troubleshoot and spark ideas
+### 6. Explore & Build (15 min)
+- Mix & match: button + PWM, functions + motors, etc.
+- Let students try ideas and share outcomes
 
 ---
 
@@ -98,4 +123,4 @@ while True:
 - Buttons
 - Servo motors and/or DC motors
 - External power (if using DC motors)
-- Optional: potentiometers, extra LEDs, buzzers
+- Optional: potentiometers, buzzers
