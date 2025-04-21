@@ -9,7 +9,7 @@ Welcome to the Raspberry Pi 3 Physical Computing Workshop! This 3-session progra
 
 ## 📚 Lesson Plan Overview
 
-### 🔹 [Session 1: Getting Started with Raspberry Pi & Physical Computing](./Session1_RPi3_Updated_PhysicalComputing.md)
+### 🔹 [Session 1: Getting Started with Raspberry Pi & Physical Computing](./Session1_RPi3_PhysicalComputing.md)
 - Introduction to Raspberry Pi 3 as a computer
 - Write your first Python program
 - Learn about GPIO and breadboards
