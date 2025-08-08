@@ -9,19 +9,19 @@ Welcome to the Raspberry Pi Physical Computing Workshop! This 3-session program 
 
 ## 📚 Lesson Plan Overview
 
-### 🔹 [Session 1: Getting Started with Raspberry Pi & Physical Computing](./Session1_RPi3_PhysicalComputing.md)
+### 🔹 [Session 1: Getting Started with Raspberry Pi & Physical Computing](./Session1_RPi_PhysicalComputing.md)
 - Introduction to Raspberry Pi as a computer
 - Write your first Python program
 - Learn about GPIO and breadboards
 - Blink an LED using GPIOZero
 
-### 🔹 [Session 2: Inputs, Outputs, Movement, and Python Fundamentals](./Session2_RPi3_InputsOutputs.md)
+### 🔹 [Session 2: Inputs, Outputs, Movement, and Python Fundamentals](./Session2_RPi_InputsOutputs.md)
 - Review Python basics: variables, loops, conditionals, and functions
 - Use buttons to control LEDs
 - Fade an LED using PWM
 - Introduce servo and DC motor control
 
-### 🔹 [Session 3: Mini Project – Invent, Build, Show Off](./Session3_RPi3_MiniProject.md)
+### 🔹 [Session 3: Mini Project – Invent, Build, Show Off](./Session3_RPi_MiniProject.md)
 - Build a custom project with buttons, LEDs, buzzers
 - Share and demo your invention with the group
 
