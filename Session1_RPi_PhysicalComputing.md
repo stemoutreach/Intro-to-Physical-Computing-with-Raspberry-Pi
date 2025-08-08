@@ -1,9 +1,9 @@
-# 🧭 Session 1: Getting Started with Raspberry Pi 3 & Physical Computing
+# 🧭 Session 1: Getting Started with Raspberry Pi & Physical Computing
 
 **Theme:** _“Code meets the real world!”_
 
 ## 🧠 Objectives
-- Understand Raspberry Pi 3 as a full computer
+- Understand Raspberry Pi as a full computer
 - Write and run your first Python program
 - Learn what GPIO pins are and what they do
 - Understand how breadboards help connect circuits
@@ -16,7 +16,7 @@
 ### 1. Welcome & Icebreaker (5–10 min)
 Prompt: “If your robot could do anything, what would it do?”
 
-### 2. What Is the Raspberry Pi 3? (10 min)
+### 2. What Is the Raspberry Pi? (10 min)
 - Overview of ports (USB, HDMI, GPIO, SD card)
 - Differences from a regular laptop
 - Introduce concept of general-purpose computing and sensors
@@ -69,7 +69,7 @@ while True:
 ---
 
 ### ✅ Materials Needed
-- Raspberry Pi 3 with power supply
+- Raspberry Pi with power supply
 - Monitor, keyboard, mouse
 - Breadboard + jumper wires
 - LED + resistor (220Ω–330Ω)
